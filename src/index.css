@@ -7,7 +7,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #404040;
+  padding: 3rem; /* 1rem = 16px */
+}
+
+header a { /* a for anchor. It means for all link inside header.*/
+  color: #ffffff; /* Color of the text */
+  font-weight: bold;
+  text-decoration: none; /* It means under link we don't need any underline. */
+  font-size: 36px;
+}
+
+main {
+  padding: 1rem; 
+}
+
+.products {
+  display: flex; /* It means we can place each product next to each other. */
+  flex-wrap: wrap; /* As a result after each image there will be space. If there are no space remaining, new image will go to new line. */
+  justify-content: center; /*It means in each line whatever content will be there, will be in center */
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem; /* By this after each image space will be created*/
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info {
+  padding: 1rem;
 }
