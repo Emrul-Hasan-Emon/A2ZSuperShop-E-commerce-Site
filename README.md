@@ -2,23 +2,29 @@
 
 # Lessons
 1. Introduction
-2. Install tools
+2. Install tools 
 3. Create React App
+    1. First create a folder named ASS
+    2. Then enter into that folder by following command
+        cd ASS
+    3. Then create a react app by following command
+        create-react-app frontend -> Here frontend is the folder which will contain all the code for frontend desgining.
+
 4. Create Git Repository
 5. List Products
-    1. Create Product Array
-    2. Add Product Images
-    3. Render Products
-    4. Style Products
+    1. First create data.js file inside frontend folder.
+    2. Create Product Array name products which will contain several objects of products.
+    3. Add Product Images
+    4. Render Products
+    5. Style Products by CSS in index.css file inside frontend folder.
+
 6. Add routing. It means when click to any link where the routing will take place.
-    1. First we need to install react router dom. For that we have a command/
+    1. First we need to install react router dom. For that we have a command.
         npm i react-router-dom
     2. For routing we have to keep every thing of app.js inside BrowseRouter Tag
     3. Then we have to import BrowseRouter from react-router-dom
     4. After that we set routing for home page name HomeScreen and for product details page named ProductScreen
     5. We replaced <a> with <Link> tag because for avoiding refresh operation.
-
-
 
 7. Create Node.JS Sserver
     1. Create  folder named backend inside A2ZSuperShop
@@ -68,3 +74,23 @@
         npm install use-reducer-logger --force
             With the help of use-reducer-logger we can find is there any issue occuring while change states. It means we can debug the
             states from developer tools. We can see each state and consequences action. Then we can easily understand what is happening each time.
+
+10. Now its time for designing. We will do designing using react bootstrap. We will not use bootstrap directly rather than we will use react bootstrap which converts bootstrap css into react component which will make our task more easier.
+    1. First install bootstrap by following command.
+        npm install react-bootstrap bootstrap
+    2. Update frontend/App.js file
+    2. For LinkContainer component which is used in App.js we need to install another packager named react router bootstrap. The command is following.
+        npm install react-router-bootstrap
+    3. Remove the style for header from frontend/index.css
+    4. import react bootstrap in frontend/index.js
+    5. Update App.js again to align the screen
+    6. Create footer in App.js file
+
+11. Create Product and Rating Component
+    1. First update HomeScreen.js. Because product are being seen in the homescreen page. 
+    2. Add bootstrap component like Row and Col
+    3. Create component folder in frontend/src folder
+    4. Inside frontend/src/component create Product.js
+    5. Now using Card component from bootstrap create a block in the screen for each product.
+    4. Create Product component
+    5. Use Rating component in product component.
